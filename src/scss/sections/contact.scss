@@ -1,0 +1,117 @@
+.contact {
+  padding: 70px 0 116px;
+
+  &__container {
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 86px;
+  }
+
+  &__content {
+    color: var(--grey);
+    flex-grow: 1;
+    max-width: 535px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: math.div(38, 32);
+
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: math.div(22, 18);
+  }
+
+  &__form {
+    width: percent(636, 1300);
+    flex-shrink: 0;
+  }
+}
+
+.form {
+  padding: 36px 36px 18px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    gap: 24px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__input-wrap {
+  }
+
+  &__button {
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 80px;
+    height: 60px;
+    text-transform: uppercase;
+    margin-top: 27px;
+  }
+}
+
+
+.file {
+  position: absolute;
+  top: 13px;
+  right: 16px;
+
+  &__btn {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @media (hover: hover) {
+      &:hover {
+        svg {
+          fill: var(--orange)
+        }
+      }
+    }
+
+    svg {
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      fill: var(--black);
+    }
+  }
+
+  &__input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+  }
+}
+
+.button {
+}

@@ -1,0 +1,62 @@
+.main-block {
+  position: relative;
+  padding: 167px 0 174px;
+
+  &__decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 648px;
+
+    svg {
+      max-width: 100%;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+  }
+
+  &__content {
+    width: percent(622, 1300);
+    flex-shrink: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: math.div(72, 60);
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    color: var(--grey);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: math.div(30, 21);
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text-small {
+    font-size: 18px;
+    line-height: math.div(22, 18);
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  &__image {
+    margin-right: -72px;
+  }
+}

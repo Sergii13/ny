@@ -1,0 +1,164 @@
+.help {
+  padding: 60px 0 70px;
+
+  &__container {
+  }
+
+  &__row {
+    display: flex;
+    gap: 94px;
+  }
+
+  &__images {
+    margin-left: -45px;
+    width: 391px;
+    flex-shrink: 0;
+  }
+
+  &__image-row {
+    display: flex;
+
+    &_1 {
+      gap: 60px;
+
+      &:not(:last-child) {
+        margin-bottom: 27px;
+      }
+    }
+
+    &_2 {
+      justify-content: flex-end;
+    }
+
+    &_3 {
+      margin-top: -20px;
+      justify-content: flex-end;
+    }
+  }
+
+  &__image-ibg {
+    box-shadow: 0px 1px 25px 3px rgba(0, 0, 0, 0.254343);
+    border-radius: 50%;
+
+    &_1 {
+      width: 172px;
+      height: 172px;
+    }
+
+    &_2 {
+      margin-top: 60px;
+      width: 121px;
+      height: 121px;
+    }
+
+    &_3 {
+      width: 121px;
+      height: 121px;
+    }
+
+    &_4 {
+      width: 71px;
+      height: 71px;
+      margin-top: 7px;
+      margin-left: 126px;
+    }
+
+    &_5 {
+      width: 144px;
+      height: 144px;
+      margin-right: 40px;
+    }
+  }
+
+  &__content {
+    color: var(--grey);
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: math.div(38, 32);
+
+    img {
+      margin-right: 22px;
+      max-width: 128px;
+      padding-top: 5px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: math.div(22, 18);
+
+    &:not(:last-child) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    gap: 13px;
+    grid-template-columns: repeat(3, 1fr);
+
+    &:not(:last-child) {
+      margin-bottom: 39px;
+    }
+  }
+
+  &__item {
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: math.div(22, 18);
+    padding: 0 5px;
+    color: #000;
+
+    &_dark-yellow {
+      background: #A07F26;
+    }
+
+    &_orange {
+      background: #FAB638;
+    }
+
+    &_violet {
+      background: #922274;
+    }
+
+    &_red {
+      background: #B8172F;
+    }
+
+    &_pink {
+      background: #CC046A;
+    }
+
+    &_blue {
+      background: #48C9F1;
+    }
+
+    &_green {
+      background: #0E978F;
+    }
+
+    &_light-green {
+      background: #D1F484;
+    }
+
+    &_green2 {
+      background: #5F8907;
+    }
+  }
+
+  &__button {
+    height: 60px;
+  }
+}
