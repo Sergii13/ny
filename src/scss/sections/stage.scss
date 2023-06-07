@@ -1,5 +1,5 @@
 .stage {
-  padding: 50px 0 35px;
+  padding: 60px 0 35px;
 
   &__container {
   }
@@ -180,6 +180,39 @@
   background: var(--gradient-violet);
   padding: 33px 24px 18px;
   border-radius: 20px;
+
+  &_big {
+    &:not(:last-child) {
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 9px;
+        height: 11px;
+        position: absolute;
+        top: 50%;
+        right: 17px;
+        transform: translateY(-50%);
+        background: url('@img/svg/decor01.svg') center /100% 100% no-repeat;
+
+      }
+    }
+
+    .item-stage__icon {
+      height: 120px;
+    }
+  }
+
+  &__title2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__icon {
     height: 70px;
