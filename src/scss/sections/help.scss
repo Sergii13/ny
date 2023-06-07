@@ -120,41 +120,88 @@
     line-height: math.div(22, 18);
     padding: 0 5px;
     color: #000;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+    background: #F7E3FD;
 
     &_dark-yellow {
-      background: #A07F26;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #A07F26;
+        }
+      }
     }
 
     &_orange {
-      background: #FAB638;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #FAB638;
+        }
+      }
     }
 
     &_violet {
-      background: #922274;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #922274;
+        }
+      }
     }
 
     &_red {
-      background: #B8172F;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #B8172F;
+        }
+      }
     }
 
     &_pink {
-      background: #CC046A;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #CC046A;
+        }
+      }
     }
 
     &_blue {
-      background: #48C9F1;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #48C9F1;
+        }
+      }
     }
 
     &_green {
-      background: #0E978F;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #0E978F;
+        }
+      }
     }
 
     &_light-green {
-      background: #D1F484;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #D1F484;
+        }
+      }
     }
 
     &_green2 {
-      background: #5F8907;
+
+      @media (hover: hover) {
+        &:hover {
+          background: #5F8907;
+        }
+      }
     }
   }
 
