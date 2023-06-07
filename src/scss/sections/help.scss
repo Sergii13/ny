@@ -186,6 +186,7 @@
       }
     }
 
+
     &_light-green {
 
       @media (hover: hover) {
@@ -208,4 +209,8 @@
   &__button {
     height: 60px;
   }
+}
+
+.poc {
+  color: red;
 }
