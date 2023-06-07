@@ -77,6 +77,21 @@
     flex-direction: column;
     gap: 34px;
 
+    &:not(:last-child) {
+      .item-stage__line {
+        &::after {
+          content: '';
+          width: 9px;
+          height: 11px;
+          background: url('@img/svg/arrow.svg');
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          position: absolute;
+        }
+      }
+    }
+
     //&:first-child {
     //  .stage__period {
     //    background: url('@img/svg/bg01.svg') center /100% 100% no-repeat;
@@ -181,6 +196,7 @@
   padding: 33px 24px 18px;
   border-radius: 20px;
 
+
   &_big {
     &:not(:last-child) {
       position: relative;
@@ -244,17 +260,6 @@
     background: #000000;
     opacity: 0.3;
     position: relative;
-
-    &::after {
-      content: '';
-      width: 9px;
-      height: 11px;
-      background: url('@img/svg/arrow.svg');
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      position: absolute;
-    }
 
     &:not(:last-child) {
       margin-bottom: 8px;
